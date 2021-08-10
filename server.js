@@ -19,7 +19,7 @@ const app = require('./controller/app');
 //--------------------------------
 //configuration
 //--------------------------------
-const host = '0.0.0.0';
+const hostname = 'localhost';
 const port = process.env.PORT || 3002;
 
 
@@ -30,7 +30,7 @@ const port = process.env.PORT || 3002;
 //main
 //--------------------------------
 //start the server and start listening for incoming requests
-app.listen(port, host, () => {
+app.listen(port, hostname, () => {
     console.log(`Server started and accessible via http://${hostname}:${port}/`
     );
 });
